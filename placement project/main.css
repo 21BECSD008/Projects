@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainbody{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(185, 185, 185);
+}
+.navigation{
+    font-weight: bold;
+    font-size: 19px;
+}
+.header img{
+    border-radius: 60%;
+    margin-left: 60px;
+    margin-right: 20px;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: 20px;
+    cursor:pointer
+}
+.mathan{
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+    background-color: gray;
+}
+.mathan ul{
+    display: flex;
+    list-style-type: none;
+}
+.mathan ul li{ 
+    padding-right: 50px;
+    font-weight: bold;
+}
+.mathan ul li a:hover{
+    text-shadow: 1px 1px 2px white;
+}
+.logo{
+    display: flex;
+}
+.mathan ul li a{
+    text-decoration: none;
+    color: black;
+}
+.maindiv{
+    position: absolute;
+    top:10vh;
+    height: 90vh;
+    width:100%;
+}
+.dashbox{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dashout{
+    width: 174px;
+    overflow: hidden;
+}
+.dashbox{
+    margin-top:20px ;
+    text-align: center;
+}
+.maindiv .dash{
+    height: 0px;
+    width: 170px;
+    border: 2px solid;
+    animation: dash 1s linear;
+}
+@keyframes dash{
+    0%{
+        transform:translateX(-220px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+.threediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.first{
+    height: 65vh;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    border-bottom: none;
+    border: none;
+}
+.firstin{
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    height: 400px;
+    width: 20%;
+    border: 1px solid;
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+    z-index: 1;
+}
+.firstin:hover{
+    opacity: 1;
+    box-shadow:5px 5px 10px gray, -5px -5px 10px gray;
+}
+#firstin1 img{
+    height: 50%;
+    width: 100%;
+    box-shadow: 0px 15px 50px gray;
+}
+#firstin1 img:hover{
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+.firstin button{
+    padding: 10px 30px;
+    margin-top:14%;
+    margin-left:60%;
+    border: 0.5px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px black;
+}
+.firstin .quiztype{
+    font-size: 25px;
+    text-align: center;
+    margin-top:20% ;
+}
+.firstin button:active{
+    border: 1px solid;
+    scale:0.98;
+}
+.firstin button:hover{
+    transition:0.2s;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.firstin span{
+    position:absolute;
+    top: 75%;
+    left: 70px;
+    border: 1px solid black;
+    padding:50px 0px;
+    transform: rotate(90deg);
+}
+.firstin .question{
+    position: absolute;
+    left: 20px;
+    top: 80%;
+    z-index: 2;
+}
+.firstin .duration{
+    position: absolute;
+    left: 20px;
+    top: 90%;
+    z-index: 2;
+}
+
+/* second div */
+
+.second{
+    height: 65vh;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: none;
+    border: none;
+}
+.secondin{
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    height: 400px;
+    width: 20%;
+    border: 1px solid;
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+}
+.secondin:hover{
+    box-shadow:5px 5px 10px gray, -5px -5px 10px gray;
+}
+#secondin1 img{
+    height: 50%;
+    width: 100%;
+    box-shadow: 0px 15px 50px gray;
+}
+#secondin1 img:hover{
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+.secondin button{
+    padding: 10px 30px;
+    margin-top:14%;
+    margin-left:60%;
+    border: 0.5px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px black;
+}
+.secondin .quiztype{
+    font-size: 25px;
+    text-align: center;
+    margin-top:20% ;
+}
+.secondin button:active{
+    border: 1px solid;
+    scale:0.98;
+}
+.secondin button:hover{
+    transition:0.2s;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.secondin span{
+    position:absolute;
+    top: 75%;
+    left: 70px;
+    border: 1px solid black;
+    padding:50px 0px;
+    transform: rotate(90deg);
+}
+.secondin .question{
+    position: absolute;
+    left: 20px;
+    top: 80%;
+    z-index: 2;
+}
+.secondin .duration{
+    position: absolute;
+    left: 20px;
+    top: 90%;
+    z-index: 2;
+}
+
+/* third div */
+
+.third{
+    height: 65vh;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: none;
+    border: none;
+}
+.thirdin{
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    height: 400px;
+    width: 20%;
+    border: 1px solid;
+    position: relative;
+    top: 50px; 
+    overflow: hidden;
+}
+.thirdin:hover{
+    box-shadow:5px 5px 10px gray, -5px -5px 10px gray;
+}
+#thirdin1 img{
+    height: 50%;
+    width: 100%;
+    box-shadow: 0px 15px 50px gray;
+}
+#thirdin1 img:hover{
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+.thirdin button{
+    padding: 10px 30px;
+    margin-top:14%;
+    margin-left:60%;
+    border: 0.5px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px black;
+}
+.thirdin .quiztype{
+    font-size: 25px;
+    text-align: center;
+    margin-top:20% ;
+    /* background-color: aquamarine; */
+}
+.thirdin button:active{
+    border: 1px solid;
+    scale:0.98;
+}
+.thirdin button:hover{
+    transition:0.2s;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.thirdin span{
+    position:absolute;
+    top: 75%;
+    left: 70px;
+    border: 1px solid black;
+    padding:50px 0px;
+    transform: rotate(90deg);
+}
+.thirdin .question{
+    position: absolute;
+    left: 20px;
+    top: 80%;
+}
+.thirdin .duration{
+    position: absolute;
+    left: 20px;
+    top: 90%;
+}
+
+/* profile */
+
+.innerprofile{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    right:0;
+    background-color: gray;
+    transition: 1s;
+    z-index: 0;
+    opacity: 0;
+} 
+.innerprofile.active{
+    transition: 1s;
+    z-index: 1;
+    opacity: 1;
+}
+.innerprofile img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+.innerprofile .editpro{
+    border: 1.5px solid;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    padding: 4px 10px;
+    position: absolute;
+    top: 130px;
+    left: 90px;
+    cursor: pointer;
+}
+.innerprofile p{
+    width: 60px;
+    position: relative;
+    top: 0px;
+    left:140px;
+    cursor: pointer;
+    margin-top: 19px;
+}
+.innerprofile p:hover{
+    text-decoration: underline;
+}
+.innerprofile .icon{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+    left: 110px;
+    margin-top:20px;
+    font-size: 18px;
+}
+.innerprofile .editpro:hover{
+    text-decoration: underline;
+}
+
+/* mainbody */
+
+.mainbody .custom{
+    position: absolute;
+    top: 230%;
+    right: 8%;
+    padding-bottom: 80px;
+}
+.custom button{
+    padding: 10px 50px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 2px solid;
+}
+.custom button:hover{
+    transition: 1s;
+    color: white;
+    box-shadow:inset 350px 0px 0px black;
+}
+.hummer{
+    font-size: 20px;
+    margin-right:10px ;
+}
+.arrow{
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 230%;
+    left: 12%;
+}
+.arrow:hover{
+    border-bottom: 3px solid;
+}

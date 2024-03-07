@@ -1,21 +1,16 @@
+
 function allu(){
-let time=new Date();
-let h=time.getHours();
-let m=time.getMinutes();
-let s=time.getSeconds();
-let T='AM';
-if(h>12){
-    h-=12;
-    T='PM';
+    const hrs = document.querySelector(".hr");
+    const min = document.querySelector(".mi");
+    const sec = document.querySelector(".se");
+    const time = new Date();
+    var se = time.getSeconds()/60;
+    var mi = (se+time.getMinutes())/60;
+    var hr = (mi+time.getHours())/12;
+    hrs.style.setProperty("--rotate",hr*360);
+    min.style.setProperty("--rotate",mi*360);
+    sec.style.setProperty("--rotate",se*360);
+    // console.log(se,mi,hr)
 }
-if(m<10){
-    h='0'+h;
-}
-if(s<10){
-    s='0'+s;
-}
-let result=h+":"+m+":"+s+" "+T;
-document.getElementById('clock').innerHTML=result;
-}
-setInterval(allu,1000);
 allu();
+setInterval(allu,1000);

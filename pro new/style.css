@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.spotify {
+    height: 300px;
+    width: 400px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.logo h1{
+    font-size: 100px;
+}
+.con img{
+    height: 200px;
+    width: 200px;
+}
+.con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-con{
+    height: 400px;
+    width: 350px;
+    border: 4px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
